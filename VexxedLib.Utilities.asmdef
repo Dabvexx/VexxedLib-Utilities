@@ -1,0 +1,16 @@
+{
+    "name": "VexxedLib.Utilities",
+    "rootNamespace": "",
+    "references": [
+        "GUID:40398e96c27143a4292ef965c1943e01"
+    ],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}
