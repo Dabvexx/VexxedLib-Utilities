@@ -59,6 +59,16 @@ namespace VexxedLib.Utils.Array
         /// <returns></returns>
         public int[][] GetAdjacentCellOffsets()
         {
+            // over, across
+            var northWest = new int[] { -1, -1 };
+            var north = new int[] { 0, -1 };
+            var northEast = new int[] { 1, -1 };
+            var west = new int[] { -1, 0 };
+            var east = new int[] { 1, 0 };
+            var southWest = new int[] { -1, 1 };
+            var south = new int[] { 0, 1 };
+            var southEast = new int[] { 1, 1 };
+
             return new int[][]
             {
                 northWest,
@@ -72,8 +82,14 @@ namespace VexxedLib.Utils.Array
             };
         }
 
-        public int[][] GetCardinalCellOffsets()
+        public static int[][] GetCardinalCellOffsets()
         {
+            // over, across
+            var north = new int[] { 0, -1 };
+            var west = new int[] { -1, 0 };
+            var east = new int[] { 1, 0 };
+            var south = new int[] { 0, 1 };
+
             return new int[][]
             {
                 north,
