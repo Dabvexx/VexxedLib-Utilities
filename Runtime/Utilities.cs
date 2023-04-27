@@ -88,6 +88,37 @@ namespace VexxedLib.Utils
         {
             return null;
         }
+
+        /// <summary>
+        /// Return all 8 cell index around cell with a given width of array.
+        /// Adding each number to the current index will get the cell in that direction away.
+        /// Repeat to get 2+ away.
+        /// </summary>
+        /// <param name="width"></param>
+        /// <returns></returns>
+        public static int[] GetAdjacentCellOffsets(int width)
+        {
+            var northWest = -width - 1;
+            var north = -width;
+            var northEast = -width + 1;
+            var west = -1;
+            var east = 1;
+            var southWest = width - 1;
+            var south = width;
+            var southEast = width + 1;
+
+            return new int[]
+            {
+                northWest,
+                north,
+                northEast,
+                west,
+                east,
+                southWest,
+                south,
+                southEast
+            };
+        } 
         #endregion
     }
 }
